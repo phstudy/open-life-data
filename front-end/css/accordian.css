@@ -1,0 +1,188 @@
+/* *********************************************************************************************
+
+ How to Create CSS3 sidr-inner Menu [Tutorial]
+ "How to Create CSS3 sidr-inner Menu" that was specially made for Desidr-class-signModo by our friend Valeriu Timbuc.
+
+ Links:
+ http://vtimbuc.net/
+ https://twitter.com/vtimbuc
+ http://desidr-class-signmodo.com/futurico
+ http://vladimirkudinov.com
+ http://rockablethemes.com
+
+ ********************************************************************************************* */
+
+/* Reset */
+
+.sidr-inner, .sidr-inner ul, .sidr-inner li, .sidr-inner a, .sidr-inner span {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.sidr-inner li {
+	list-style: none;
+}
+
+/* Layout & Style */
+
+.sidr-inner li > a {
+	display: block;
+	position: relative;
+	min-width: 110px;
+	padding: 0 10px 0 40px;
+	height: 32px;
+	color: #fdfdfd;
+	font: bold 12px/32px Arial, sans-serif;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+	background: #6c6e74;
+	background: -moz-linear-gradient(top,  #6c6e74 0%, #4b4d51 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6c6e74), color-stop(100%,#4b4d51));
+	background: -webkit-linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+	background: -o-linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+	background: -ms-linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+	background: linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+}
+
+.sidr-inner > li:hover > a, .sidr-inner > li:target > a {
+	color: #3e5706;
+	text-shadow: 1px 1px 1px rgba(255,255,255, .2);
+	/*background: url(../img/active.png) repeat-x;*/
+	background: #a5cd4e;
+	background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+	background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+}
+
+.sidr-inner li > a span {
+	display: block;
+	position: absolute;
+	top: 7px;
+	right: 0;
+	padding: 0 10px;
+	margin-right: 10px;
+	font: normal bold 12px/18px Arial, sans-serif;
+	background: #404247;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
+}
+
+.sidr-inner > li:hover > a span, .sidr-inner > li:target > a span {
+	color: #fdfdfd;
+	text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+	background: #3e5706;
+}
+
+/* Images */
+
+.sidr-inner > li > a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 24px;
+	height: 24px;
+	margin: 4px 8px;
+	background-repeat: no-repeat;
+	background-image: url(../img/icons.png);
+	background-position: 0px 0px;
+}
+
+.sidr-inner li.sidr-class-files > a:before {
+	background-position: 0px 0px;
+}
+.sidr-inner li.sidr-class-files:hover > a:before, .sidr-inner li.sidr-class-files:target > a:before {
+	background-position: 0px -24px;
+}
+
+.sidr-inner li.sidr-class-mail > a:before {
+	background-position: -24px 0px;
+}
+.sidr-inner li.sidr-class-mail:hover > a:before, .sidr-inner li.sidr-class-mail:target > a:before {
+	background-position: -24px -24px;
+}
+
+.sidr-inner li.sidr-class-cloud > a:before {
+	background-position: -48px 0px;
+}
+.sidr-inner li.sidr-class-cloud:hover > a:before, .sidr-inner li.sidr-class-cloud:target > a:before {
+	background-position: -48px -24px;
+}
+
+.sidr-inner li.sidr-class-sign > a:before {
+	background-position: -72px 0px;
+}
+.sidr-inner li.sidr-class-sign:hover > a:before, .sidr-inner li.sidr-class-sign:target > a:before {
+	background-position: -72px -24px;
+}
+
+/* Sub Menu */
+
+.sidr-class-sub-menu li a {
+	color: #797979;
+	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+	background: #e5e5e5;
+	border-bottom: 1px solid #c9c9c9;
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+}
+
+.sidr-class-sub-menu li:hover a {
+	background: #efefef;
+}
+
+.sidr-class-sub-menu li:last-child a {
+	border: none;
+}
+
+.sidr-class-sub-menu li > a span {
+	color: #797979;
+	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+	background: transparent;
+	border: 1px solid #c9c9c9;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.sidr-class-sub-menu em {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 14px;
+	color: #a6a6a6;
+	font: normal 10px/32px Arial, sans-serif;
+}
+
+/* Functionality */
+
+.sidr-class-sub-menu {
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height .2s ease-in-out;
+	-moz-transition: height .2s ease-in-out;
+	-o-transition: height .2s ease-in-out;
+	-ms-transition: height .2s ease-in-out;
+	transition: height .2s ease-in-out;
+}
+
+.expand {
+	height: 98px;
+}
+
+#sidr-main .sidr-inner li:target   .sidr-class-sub-menu {
+	height: 98px;
+}

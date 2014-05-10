@@ -1,0 +1,22 @@
+.index-header {
+	width: 100%;
+	height: 44px;
+	background: #123465;
+}
+
+.index-menu {
+	background: url('images/open.png') center center no-repeat;
+	width: 44px;
+	height: 44px;
+	display: block;
+}
+
+#index-sidepage {
+	display: none;
+}
+
+.nav h4{
+	font-size: 36px;
+}
+
+ 
